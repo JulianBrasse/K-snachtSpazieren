@@ -5,20 +5,18 @@
 }
 
 main {
-	margin: auto;
 	padding: 20px;
+	display: flex;
+	
+}
+
+section {
 	width: 50%;
 }
 
 aside {
-	padding: 20px;
+	margin-left: 20px;
 	width: 20%;
-	margin: 20px;
-	outline-style: solid;
-	outline-width: 2px;
-	outline-offset: 3px;
-	outline-color: rgb(0 250 100);
-	border-radius: 10px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -39,7 +37,10 @@ header, footer {
 	background-image: linear-gradient(to right, rgb(0 100 250), rgb(0 250 100));
 }
 
-	
+iframe {
+	border-style: none;
+}
+
 .special {
 	font-style: unset;
 	font-family: "Raleway Medium";
@@ -67,7 +68,14 @@ header, footer {
 
 @media screen and (max-width: 800px) {
 	main {
-		width: auto;
+		flex-direction: column;
+	}
+	section {
+		width: unset;
+	}
+	aside {
+		width: unset;
+		margin: 0px;
 	}
 }
 
