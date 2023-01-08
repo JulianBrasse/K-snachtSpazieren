@@ -10,37 +10,35 @@ main {
 	width: 50%;
 }
 
+aside {
+	padding: 20px;
+	width: 20%;
+	margin: 20px;
+	outline-style: solid;
+	outline-width: 2px;
+	outline-offset: 3px;
+	outline-color: rgb(0 250 100);
+	border-radius: 10px;
+}
+
 h1, h2, h3, h4, h5 {
 	font-family: "Raleway Bold";
 }
 
-.style1 {
+header, footer {
 	display: flex;
 	padding: 20px;
 	margin: 10px;
-	box-shadow: 0px 0px 20px black;
 	outline-style: solid;
-	outline-color: rgb(250 250 250);
 	outline-width: 2px;
 	outline-offset: 3px;
 	border-radius: 10px;
+	outline-color: rgb(250 250 250);
 	color: rgb(250 250 250);
+	box-shadow: 0px 0px 20px black;
 	background-image: linear-gradient(to right, rgb(0 100 250), rgb(0 250 100));
 }
 
-.style2 {
-	padding: 20px;
-	margin: 20px 0px 20px 0px;
-	outline-style: solid;
-	outline-color: rgb(0 250 100);
-	outline-width: 2px;
-	outline-offset: 3px;
-	border-radius: 10px;
-}
-
-.logo {
-	color: rgb(0 250 100);
-}
 	
 .special {
 	font-style: unset;
@@ -48,9 +46,29 @@ h1, h2, h3, h4, h5 {
 	color: rgb(0 250 100);
 }
 
+.specialbox {
+	padding: 20px;
+	margin: 20px 0px 20px 0px;
+	outline-style: solid;
+	outline-width: 2px;
+	outline-offset: 3px;
+	outline-color: rgb(0 250 100);
+	border-radius: 10px;
+}
+
+.logo {
+	color: rgb(0 250 100);
+}
+
 ::selection {
 	color: rgb(250 250 250);
 	background: rgb(0 250 100);
+}
+
+@media screen and (max-width: 800px) {
+	main {
+		width: auto;
+	}
 }
 
 @font-face {
