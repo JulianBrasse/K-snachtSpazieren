@@ -38,6 +38,11 @@ header, footer {
 	background-image: linear-gradient(to right, rgb(0 100 250), rgb(0 250 100));
 }
 
+
+header a {
+	display: flex;
+}
+
 iframe {
 	border-style: none;
 	width: 100%;
@@ -69,10 +74,6 @@ iframe {
 
 .logo2 {
 	color: rgb(250 250 250);
-}
-
-.logolink {
-	display: flex;
 }
 
 ::selection {
