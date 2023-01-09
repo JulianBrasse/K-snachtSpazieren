@@ -37,7 +37,7 @@ header, footer {
 	background-image: linear-gradient(to right, rgb(0 100 250), rgb(0 250 100));
 }
 
-header a, {
+header a {
 	display: flex;
 }
 
