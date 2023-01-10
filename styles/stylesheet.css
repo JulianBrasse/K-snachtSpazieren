@@ -92,7 +92,12 @@ iframe {
 	border-radius: 10px;
 }
 
-display p {
+details {
+	padding: 20px;
+	width: 100%;
+}
+
+details p {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
