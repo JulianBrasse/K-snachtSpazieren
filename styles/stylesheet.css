@@ -95,14 +95,30 @@ details {
 	outline-color: rgb(0 0 0);
 }
 
+details p {
+	margin-bottom: 20px;
+}
+
 nav {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 }
 
+nav.button {
+	width: 100%
+}
+
 .logo {
 	color: rgb(0 250 100);
+}
+
+.left {
+	margin-right: 10px;
+}
+
+.right {
+	margin-left: 10px;
 }
 
 .special {
