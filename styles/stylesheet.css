@@ -74,6 +74,11 @@ aside {
 	width: 50%;
 }
 
+aside iframe {
+	margin: 0px;
+	height: 100%;
+}
+
 iframe {
 	margin: 20px 0px 20px 0px;
 	height: 250px;
@@ -127,12 +132,6 @@ nav {
 	outline-offset: -2px;
 	outline-color: rgb(0 250 100);
 	border-radius: 10px;
-}
-
-.sidemap {
-	margin: 0px;
-	height: 100%;
-	width: 50%;
 }
 
 .button {
@@ -207,7 +206,7 @@ nav {
 		font-size: 24;
 	}
 	iframe {
-		width: 100% !important;
+		width: 100%;
 	}
 }
 
