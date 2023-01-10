@@ -122,10 +122,10 @@ iframe {
 		flex-direction: column;
 	}
 	aside {
-		margin: 0px;
+		margin: 20px 0px 0px 0px;
 	}
 	aside img {
-	
+		height: unset;
 	}
 }
 
