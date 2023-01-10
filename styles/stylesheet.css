@@ -11,6 +11,7 @@ body {
 
 main {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	padding: 20px;
 }
@@ -24,6 +25,10 @@ section {
 aside {
 	margin-left: 20px;
 	width: 30%;
+}
+
+nav {
+display: flex;
 }
 
 header, footer {
