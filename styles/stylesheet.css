@@ -123,7 +123,7 @@ iframe {
 	header {
 		margin: 25px 25px 5px 25px;
 	}
-
+	
 	footer {
 		margin: 5px 25px 25px 25px;
 	}
@@ -131,7 +131,9 @@ iframe {
 	main {
 		width: unset;
 	}
-	
+}
+
+@media screen and (max-width: 1100px) {
 	section {
 		width: unset;
 		flex-direction: column;
