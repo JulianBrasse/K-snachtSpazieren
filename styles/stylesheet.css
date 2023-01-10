@@ -194,10 +194,11 @@ nav {
 	
 	aside {
 		margin: 0px;
-		width: 100%;
+		width: unset;
 	}
 	
 	aside img {
+		margin-top: 20px;
 		height: unset;
 		width: 100%;
 	}
