@@ -194,8 +194,7 @@ nav {
 	}
 	
 	aside {
-		margin: 20px 0px 0px 0px;
-		flex-direction: column-reverse;
+		margin: 0px;
 	}
 	
 	aside img {
@@ -205,6 +204,9 @@ nav {
 	
 	header h1 {
 		font-size: 24;
+	}
+	iframe {
+		width: 100%;
 	}
 }
 
