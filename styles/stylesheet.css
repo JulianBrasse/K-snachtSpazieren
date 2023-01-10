@@ -52,6 +52,11 @@ aside {
 	width: 50%;
 }
 
+aside img {
+	width: 100%;
+	border-radius: 10px;
+}
+
 nav {
 	display: flex;
 }
