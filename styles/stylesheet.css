@@ -70,10 +70,12 @@ section {
 
 aside {
 	display: flex;
+	flex-direction: column;
 	margin-left: 20px;
 }
 
 aside img {
+	margin-bottom: 20px;
 	height: 15vw;
 	border-radius: 10px;
 }
@@ -125,6 +127,10 @@ details {
 
 .imageright {
 	margin-left: 20px;
+}
+
+.gallerysmall {
+	display: flex;
 }
 
 .button {
