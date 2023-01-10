@@ -123,6 +123,10 @@ details {
 	margin: 0px;
 }
 
+.imageright {
+	margin-left: 20px;
+}
+
 .button {
 	display: block;
 	padding: 20px;
