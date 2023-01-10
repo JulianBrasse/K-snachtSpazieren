@@ -71,7 +71,7 @@ nav {
 }
 
 iframe {
-	border-style: none;
+	margin: 20px 0px 20px 0px;
 	width: 70vw;
 	height: 30vh;
 	border-style: none;
