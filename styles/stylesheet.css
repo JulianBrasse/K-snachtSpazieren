@@ -110,14 +110,6 @@ nav {
 	color: rgb(0 250 100);
 }
 
-.left {
-	margin-right: 15px;
-}
-
-.right {
-	margin-left: 15px;
-}
-
 .special {
 	font-style: unset;
 	font-family: "Raleway Medium";
@@ -156,6 +148,14 @@ nav {
 .button:hover {
 	outline-width:5px;
 	outline-offset: 0px;
+}
+
+.left {
+	margin-right: 15px;
+}
+
+.right {
+	margin-left: 15px;
 }
 
 ::selection {
