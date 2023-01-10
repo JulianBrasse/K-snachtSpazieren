@@ -89,7 +89,7 @@ iframe {
 }
 
 img {
-border-radius: 10px;
+	border-radius: 10px;
 }
 
 details {
@@ -161,7 +161,9 @@ nav {
 	margin-left: 15px;
 }
 
-::marker
+a:hover {
+	color: rgb(250 100 0);
+}
 
 ::selection {
 	color: rgb(250 250 250);
