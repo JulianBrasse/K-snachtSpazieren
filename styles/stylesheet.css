@@ -53,11 +53,11 @@ main {
 section {
 	display: flex;
 	flex-direction: row;
+	width: 100%;
 }
 
 aside {
 	margin-left: 20px;
-	width: 50%;
 }
 
 aside img {
