@@ -97,12 +97,6 @@ details {
 	width: 100%;
 }
 
-details p {
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-}
-
 .logo {
 	color: rgb(0 250 100);
 }
