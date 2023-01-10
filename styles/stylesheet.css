@@ -63,7 +63,7 @@ p, h4 {
 main {
 	margin: auto;
 	padding: 20px;
-	width: 70%;
+	width: 60%;
 }
 
 section {
@@ -206,7 +206,7 @@ nav {
 		font-size: 24;
 	}
 	iframe {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
