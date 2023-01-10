@@ -178,7 +178,7 @@ nav {
 	header h1 {
 		font-size: 24px;
 	}
-	nav.button {
+	nav a {
 		width: 100%;
 	}
 }
