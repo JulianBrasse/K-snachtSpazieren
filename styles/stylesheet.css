@@ -32,7 +32,7 @@ footer {
 	margin: 5px 10px 10px 10px;
 }
 
-header, footer, nav {
+header, footer, nav, a {
 	color: rgb(250 250 250);
 }
 
