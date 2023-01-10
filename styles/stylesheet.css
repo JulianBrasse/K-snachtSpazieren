@@ -106,10 +106,6 @@ nav {
 	width: 100%;
 }
 
-nav.button {
-	width: 100%
-}
-
 .logo {
 	color: rgb(0 250 100);
 }
@@ -181,6 +177,9 @@ nav.button {
 	}
 	header h1 {
 		font-size: 24px;
+	}
+	nav.button {
+		width: 100%;
 	}
 }
 
