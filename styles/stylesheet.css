@@ -75,7 +75,7 @@ aside {
 	margin-left: 20px;
 	display: flex;
 	flex-direction: column;
-	width=50%;
+	width: 50%;
 }
 
 iframe {
@@ -84,6 +84,10 @@ iframe {
 	width: 100%;
 	border-style: none;
 	border-radius: 10px;
+}
+
+img {
+border-radius: 10px;
 }
 
 details {
