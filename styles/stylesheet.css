@@ -33,7 +33,7 @@ footer {
 
 header, footer, nav, a {
 	display: flex;
-	color: rgb(250 250 250);
+	color: rgb(250 250 250) !important;
 }
 
 h1, h2, h3, h4, h5, summary, a {
@@ -151,7 +151,6 @@ nav {
 .button:hover {
 	outline-width:5px;
 	outline-offset: 0px;
-	color: rgb(250 250 250);
 }
 
 .left {
@@ -163,7 +162,7 @@ nav {
 }
 
 a:hover {
-	color: rgb(250 100 0);
+	color: rgb(0 150 100);
 }
 
 ::selection {
