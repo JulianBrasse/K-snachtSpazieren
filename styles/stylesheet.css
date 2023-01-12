@@ -145,6 +145,10 @@ nav {
 	display: flex;
 }
 
+.infobox h4 {
+	margin: 0px 10px 0px 0px;
+}
+
 .button {
 	margin: 5px;
 	padding: 20px;
@@ -159,6 +163,16 @@ nav {
 .button:hover {
 	outline-offset: 0px;
 	outline: solid 5px rgb(250 250 250);
+}
+
+.right::after {
+	margin: 0px 0px 0px 10px;
+	content:"▶";
+}
+
+.left::after {
+	margin: 0px 10px 0px 0px;
+	content:"◀";
 }
 
 ::selection {
