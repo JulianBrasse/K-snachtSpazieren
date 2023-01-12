@@ -173,6 +173,11 @@ nav {
 	margin-left: 15px;
 }
 
+details:hover {
+	outline-offset: -5px;
+	outline-width: 5px;
+}
+
 details a:hover {
 	color: rgb(0 250 100);
 }
