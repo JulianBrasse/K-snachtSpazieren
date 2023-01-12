@@ -34,7 +34,7 @@ body {
 header, footer {
 	padding: 20px;
 	box-shadow: 0px 0px 20px rgb(0 0 0);
-	background-image: linear-gradient(to right, rgb(0 100 250), rgb(0 250 100));
+	background-image: linear-gradient(to right, rgb(100 0 250), rgb(250 0 100));
 }
 
 header, footer, nav, a {
@@ -58,7 +58,6 @@ aside {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-
 }
 
 iframe {
@@ -66,26 +65,25 @@ iframe {
 	height: 250px;
 	width: 100%;
 	border: none;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 aside iframe {
 	margin: 0px;
 	height: 100%;
-	width: unset;
 }
 
 img {
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 audio {
 	margin: 20px 0px;
-	height: 30px;
+	height: 40px;
 	width: 100%;
 	outline-offset: 3px;
 	outline: 2px solid rgb(250 250 250);
-	border-radius: 15px;
+	border-radius: 20px;
 	box-shadow: 0px 0px 20px rgb(0 0 0);
 }
 
@@ -94,7 +92,12 @@ details {
 	padding: 20px;
 	outline-offset: -2px;
 	outline: 2px solid rgb(0 0 0);
-	border-radius: 10px;
+	border-radius: 20px;
+}
+
+details:hover, details[open] {
+	outline-offset: -5px;
+	outline: 5px;
 }
 
 details p {
@@ -102,7 +105,11 @@ details p {
 }
 
 details a {
-	color: rgb(0 100 250);
+	color: rgb(100 0 250);
+}
+
+details a:hover {
+	color: rgb(250 0 100);
 }
 
 nav {
@@ -111,97 +118,92 @@ nav {
 }
 
 .logo {
-	color: rgb(0 250 100);
+	color: rgb(250 0 100);
 }
 
 .special {
 	font-style: unset;
 	font-family: "Raleway Medium";
-	color: rgb(0 250 100);
+	color: rgb(250 0 100);
 }
 
 .specialbox {
 	margin: 20px 0px;
 	padding: 20px;
-	outline: solid 2px rgb(250 0 100);
-	outline-width: 2px;
 	outline-offset: -2px;
-	outline-color: rgb(0 250 100);
-	border-radius: 10px;
+	outline: solid 2px rgb(250 0 100);
+	border-radius: 20px;
 }
 
 .button {
 	margin: 5px;
-	display: block;
 	padding: 20px;
-	outline-style: solid;
-	outline-width: 2px;
+	display: block;
+	outline: solid 2px rgb(250 250 250);
 	outline-offset: 3px;
-	border-radius: 10px;
-	outline-color: rgb(250 250 250);
+	border-radius: 20px;
 	box-shadow: 0px 0px 20px rgb(0 0 0);
-	background-image: linear-gradient(to bottom right, rgb(0 100 250), rgb(0 250 100));
+	background-image: linear-gradient(to bottom right, rgb(100 0 250), rgb(250 0 100));
 }
 
 .button:hover {
-	outline-width:5px;
+	outline: 5px;
 	outline-offset: 0px;
-}
-
-details:hover {
-	outline-offset: -5px;
-	outline-width: 5px;
-}
-
-details a:hover {
-	color: rgb(0 250 100);
 }
 
 ::selection {
 	color: rgb(250 250 250);
-	background: rgb(0 250 100);
+	background: rgb(100 0 250);
 }
 
 @supports (-webkit-touch-callout: none) {
 /* CSS specific to iOS devices */
 	* {
-		outline-style: none;
+		outline: none;
 	}
+	
 	.specialbox {
-		border-style: solid;
-		border-width: 2px;
-		border-color: rgb (0 250 0);
+		border: solid 2px rgb(250 0 100);
 	}
+	
 	.button {
 		margin: 0px;
+	}
+	
+	.button:hover {
+		background-image: linear-gradient(to bottom right, rgb(100 0 250), rgb(175 0 175));
+	}
+	
+	@media screen and (max-width: 800px) {
+		.left {
+			margin: 0px 10px 0px 0px;
+		}
+		
+		.right {
+			margin: 0px 0px 0px 10px;
+		}
 	}
 }
 
 @media screen and (max-width: 800px) {
-	header {
-		margin: 25px 25px 5px 25px;
-	}
-	
-	footer {
-		margin: 5px 25px 25px 25px;
-	}
-	
 	main {
 		width: unset;
 	}
+	
 	header h1 {
 		font-size: 24px;
 	}
+	
 	nav a {
 		width: 100%;
 	}
 	
 	.left {
-		margin-right: 15px;
+		margin: 0px 10px 0px 0px;
 	}
 	
 	.right {
-		margin-left: 15px;
+		margin: 0px 0px 0px 10px;
 	}
 }
 
@@ -222,9 +224,6 @@ details a:hover {
 		width: 100%;
 	}
 	
-	header h1 {
-		font-size: 24;
-	}
 	iframe {
 		height: 250px !important;
 		width: 100%;
