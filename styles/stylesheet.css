@@ -7,35 +7,6 @@
 	text-decoration: none;
 }
 
-body {
-	background-color: rgb(250 250 250);
-}
-
-header, footer {
-	padding: 20px;
-	outline-offset: 3px;
-	outline-width: 2px;
-	outline-style: solid;
-	border-radius: 10px;
-	box-shadow: 0px 0px 20px rgb(0 0 0);
-	background-image: linear-gradient(to right, rgb(0 100 250), rgb(0 250 100));
-	outline-color: rgb(250 250 250);
-
-}
-
-header {
-	margin: 10px 10px 5px 10px;
-}
-
-footer {
-	margin: 5px 10px 10px 10px;
-}
-
-header, footer, nav, a {
-	display: flex;
-	color: rgb(250 250 250);
-}
-
 h1, h2, h3, h4, h5, summary, a {
 	font-family: "Raleway Bold";
 }
@@ -56,10 +27,25 @@ p, h4 {
 	font-size: 16;
 }
 
+body {
+	background-color: rgb(250 250 250);
+}
+
+header, footer {
+	padding: 20px;
+	box-shadow: 0px 0px 20px rgb(0 0 0);
+	background-image: linear-gradient(to right, rgb(0 100 250), rgb(0 250 100));
+}
+
+header, footer, nav, a {
+	display: flex;
+	color: rgb(250 250 250);
+}
+
 main {
 	margin: auto;
-	padding: 20px;
 	width: 60%;
+	padding: 20px;
 }
 
 section {
@@ -68,10 +54,19 @@ section {
 }
 
 aside {
-	margin-left: 20px;
+	margin: 0px 0px 0px 20px;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+
+}
+
+iframe {
+	margin: 20px 0px;
+	height: 250px;
+	width: 100%;
+	border: none;
+	border-radius: 10px;
 }
 
 aside iframe {
@@ -80,42 +75,30 @@ aside iframe {
 	width: unset;
 }
 
-iframe {
-	margin: 20px 0px;
-	height: 250px;
-	width: 100%;
-	border-style: none;
+img {
 	border-radius: 10px;
 }
 
 audio {
 	margin: 20px 0px;
-	width: 100%;
 	height: 30px;
+	width: 100%;
 	outline-offset: 3px;
-	outline-width: 2px;
-	outline-style: solid;
+	outline: 2px solid rgb(250 250 250);
 	border-radius: 15px;
-	box-shadow: 0px 0px 20px black;
-	outline-color: white;
-}
-
-img {
-	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgb(0 0 0);
 }
 
 details {
 	margin: 20px 0px;
 	padding: 20px;
-	outline-offset:-2px;
-	outline-width: 2px;
-	outline-style: solid;
+	outline-offset: -2px;
+	outline: 2px solid rgb(0 0 0);
 	border-radius: 10px;
-	outline-color: rgb(0 0 0);
 }
 
 details p {
-	margin-bottom: 20px;
+	margin: 0px 0px 20px 0px;
 }
 
 details a {
@@ -140,7 +123,7 @@ nav {
 .specialbox {
 	margin: 20px 0px;
 	padding: 20px;
-	outline-style: solid;
+	outline: solid 2px rgb(250 0 100);
 	outline-width: 2px;
 	outline-offset: -2px;
 	outline-color: rgb(0 250 100);
@@ -165,14 +148,6 @@ nav {
 	outline-offset: 0px;
 }
 
-.left {
-	margin-right: 15px;
-}
-
-.right {
-	margin-left: 15px;
-}
-
 details:hover {
 	outline-offset: -5px;
 	outline-width: 5px;
@@ -185,6 +160,21 @@ details a:hover {
 ::selection {
 	color: rgb(250 250 250);
 	background: rgb(0 250 100);
+}
+
+@supports (-webkit-touch-callout: none) {
+/* CSS specific to iOS devices */
+	* {
+		outline-style: none;
+	}
+	.specialbox {
+		border-style: solid;
+		border-width: 2px;
+		border-color: rgb (0 250 0);
+	}
+	.button {
+		margin: 0px;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -204,6 +194,14 @@ details a:hover {
 	}
 	nav a {
 		width: 100%;
+	}
+	
+	.left {
+		margin-right: 15px;
+	}
+	
+	.right {
+		margin-left: 15px;
 	}
 }
 
