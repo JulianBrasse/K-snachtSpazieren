@@ -147,7 +147,6 @@ nav {
 	outline-offset: -2px;
 	outline: solid 2px rgb(250 0 100);
 	border-radius: 10px;
-	background-image: linear-gradient(to top, rgb(250 250 250), rgba(250 250 250 / 0));
 }
 
 .infobox {
@@ -188,9 +187,11 @@ nav {
 .bottomfade {
 	position: fixed;
 	bottom: 0px;
+	right: 0px;
+	left: 0px;
 	height: 106px;
-	width: 100%;
 	display: none;
+	background-image: linear-gradient(to top, rgb(250 250 250), rgba(250 250 250 / 0));
 }
 
 ::selection {
