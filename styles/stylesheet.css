@@ -184,6 +184,10 @@ nav {
 	content:"◀";
 }
 
+.start {
+	background-image: none;
+}
+
 .bottomfade {
 	position: fixed;
 	bottom: 0px;
@@ -246,7 +250,8 @@ nav {
 		right: 20px;
 		bottom: 20px;
 		left: 20px;
-		color: rgb(250 0 100);
+		z-index: 1;
+		background-image: linear-gradient(to bottom right, rgb(100 0 250), rgb(250 0 100));
 	}
 	
 	.bottomfade {
