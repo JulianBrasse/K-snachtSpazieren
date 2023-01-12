@@ -223,6 +223,7 @@ details a:hover {
 		font-size: 24;
 	}
 	iframe {
+		height: 250px !important;
 		width: 100%;
 	}
 }
