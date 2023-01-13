@@ -278,7 +278,7 @@ nav {
 
 @supports (-webkit-touch-callout: none) {
 /* CSS specific to iOS devices */
-	details, .button, .specialbox {
+	details, .button, .button:hover, .specialbox {
 		outline: none;
 	}
 	
@@ -288,6 +288,7 @@ nav {
 	
 	.button {
 		margin: 0px;
+		border-radius: 10px;
 	}
 	
 	.specialbox {
