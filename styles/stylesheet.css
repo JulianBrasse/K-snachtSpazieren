@@ -297,6 +297,7 @@ nav {
 	
 	.button:hover {
 		background-image: linear-gradient(to bottom right, rgb(100 0 250), rgb(175 0 175));
+		border-radius: 10px;
 	}
 	
 	@media screen and (max-width: 800px) {
