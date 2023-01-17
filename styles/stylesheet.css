@@ -290,6 +290,10 @@ nav {
 		border-radius: 10px;
 	}
 	
+	details:hover {
+		border-radius: 10px;
+	}
+	
 	@media screen and (max-width: 800px) {
 		.left {
 			margin: 0px 10px 0px 0px;
