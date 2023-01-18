@@ -208,7 +208,7 @@ nav {
 	}
 	
 	.start {
-		margin: 24px 4px 4px;
+		margin: 24px 4px 4px 4px;
 		position: sticky;
 		bottom: 24px;
 		z-index: 1;
@@ -225,11 +225,11 @@ nav {
 	}
 	
 	.left {
-		margin: 0px 14px 0px 0px;
+		margin: 4px 14px 4px 4px;
 	}
 	
 	.right {
-		margin: 0px 0px 0px 14px;
+		margin: 4px 4px 4px 14px;
 	}
 }
 
@@ -245,7 +245,7 @@ nav {
 	}
 	
 	aside img {
-		margin-top: 20px;
+		margin: 20px 0px 0px 0px;
 		height: unset;
 		width: 100%;
 	}
