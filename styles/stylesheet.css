@@ -226,10 +226,12 @@ nav {
 	
 	.left {
 		margin: 4px 14px 4px 4px;
+		justify-content: flex-start;
 	}
 	
 	.right {
 		margin: 4px 4px 4px 14px;
+		justify-content: flex-end;
 	}
 }
 
