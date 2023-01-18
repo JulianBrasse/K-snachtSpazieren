@@ -185,6 +185,10 @@ nav {
 	content:"▶";
 }
 
+.mobile {
+	display: none;
+}
+
 ::selection {
 	color: rgb(250 250 250);
 	background: rgb(100 0 250);
@@ -204,12 +208,18 @@ nav {
 	}
 	
 	.start {
-		position: fixed;
+		margin: 20px;
+		position: sticky;
 		right: 20px;
 		bottom: 20px;
 		left: 20px;
 		z-index: 1;
 		background-image: linear-gradient(to bottom right, rgb(100 0 250), rgb(250 0 100));
+		display: none;
+	}
+	
+	.mobile {
+		display: flex;
 	}
 	
 	.bottomfade {
